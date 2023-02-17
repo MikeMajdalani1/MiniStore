@@ -1,0 +1,18 @@
+<div class="modal-content">
+  <div class="modal-header">
+    <h4>{{ title }}</h4>
+  </div>
+  <div class="modal-body">
+    <span
+      ><b>Quanity:</b>
+      <p>{{ quantity }}</p></span
+    >
+    <b>Category:</b>
+    <span *ngFor="let category of categories"
+      ><p>{{ category.title }}</p></span
+    >
+  </div>
+  <div class="modal-footer">
+    <button type="button" (click)="close()">OK</button>
+  </div>
+</div>
