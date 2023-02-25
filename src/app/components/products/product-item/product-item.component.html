@@ -1,0 +1,8 @@
+<div class="productCard_container">
+  <div class="productCard_info">
+    <img [src]="product.image" [alt]="product.name" />
+    <h1 class="productCard_info_title">{{ product.name }}</h1>
+    <h2>Price: ${{ product.price }}</h2>
+    <button (click)="getMoreInfo()">More Info</button>
+  </div>
+</div>

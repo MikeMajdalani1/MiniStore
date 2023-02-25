@@ -45,18 +45,3 @@
 .productCard_modal_icon {
   font-size: 25px;
 }
-.productCard_btn {
-  background-color: #4caf50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  transition: all 0.2s ease-in-out;
-}
-.productCard_btn:hover {
-  opacity: 0.9;
-  cursor: pointer;
-}

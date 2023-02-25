@@ -1,0 +1,19 @@
+<div class="details_container">
+  <img [src]="product$?.image" [alt]="product$?.name" />
+  <h1>{{ product$?.name }}</h1>
+  <span class="details_section"
+    ><b>Price:</b>
+    <p>${{ product$?.price }}</p></span
+  >
+  <span class="details_section"
+    ><b>Quanity:</b>
+    <p>{{ product$?.quantity }}</p></span
+  >
+  <b>Category:</b>
+  <div class="details_section">
+    <p *ngFor="let category of product$?.categories">
+      {{ category.title }}
+    </p>
+  </div>
+  <button (click)="goBack()">Go Back</button>
+</div>

@@ -1,16 +1,1 @@
-<div class="home_container">
-  <div class="home_subcontainer">
-    <h1>Welcome to our store</h1>
-    <h2>Check out our products</h2>
-    <div class="home_products">
-      <app-product-card
-        *ngFor="let product of productsArray"
-        [ProductName]="product['title']"
-        [ProductPrice]="product['price']"
-        [ProductQuantity]="product['quantity']"
-        [ProductCategories]="product['categories']"
-        [ProductSmallImage]="product['images'][0]['small']"
-      />
-    </div>
-  </div>
-</div>
+<router-outlet></router-outlet>

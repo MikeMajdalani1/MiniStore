@@ -1,0 +1,12 @@
+<div class="home_container">
+  <div class="home_subcontainer">
+    <h1>Welcome to our store</h1>
+    <h2>Check out our products</h2>
+    <div class="home_products">
+      <app-product-item
+        *ngFor="let product of productsArray"
+        [product]="product"
+      />
+    </div>
+  </div>
+</div>

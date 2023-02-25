@@ -1,0 +1,25 @@
+.home_container {
+  background-color: white;
+  max-width: 1200px;
+  width: 100%;
+  margin: 20px auto;
+}
+.home_subcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home_products {
+  padding: 20px 40px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+
+@media (max-width: 980px) {
+  .home_products {
+    grid-template-columns: auto;
+  }
+}
